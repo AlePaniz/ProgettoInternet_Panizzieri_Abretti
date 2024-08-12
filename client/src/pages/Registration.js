@@ -45,7 +45,7 @@ function Registration() {
           <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
           <link rel="stylesheet" href="Style.css"/>
       </Helmet>
-      <div class="reg-header">
+      <div className="reg-header">
         <div className="wrapper-reg">
           <div className="registration-box">
             <h2>REGISTRATI</h2>
@@ -55,7 +55,7 @@ function Registration() {
               validationSchema={validationSchema}
             >
               <Form className="formContainer">
-                <div class="input-box">      
+                <div className="input-box">      
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -64,7 +64,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="nome" component="span" />   
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -73,7 +73,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="cognome" component="span" />
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -82,7 +82,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="codFiscale" component="span" />
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -91,7 +91,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="indirizzo" component="span" />
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -100,7 +100,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="email" component="span" />
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -109,7 +109,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="telefono" component="span" />
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   <Field
                     autoComplete="off"
                     id="regUtente"
@@ -118,7 +118,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="username" component="span" />
                 </div>
-                <div class="input-box">
+                <div className="input-box">
                   
                   <Field
                     autoComplete="off"
@@ -129,7 +129,7 @@ function Registration() {
                   />
                   <ErrorMessage class="errore" name="password" component="span" />
                 </div>
-                <div class="tipo-utente">
+                <div className="tipo-utente">
                   
                 </div>
               
@@ -164,7 +164,7 @@ function Registration() {
                     </>
                   )}
                 />
-                <button class="btn-log-reg-forgot" type="submit">Registrati</button>
+                <button className="btn-log-reg-forgot" type="submit">Registrati</button>
               </Form>
             </Formik>
           </div>

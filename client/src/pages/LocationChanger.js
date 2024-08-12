@@ -93,7 +93,7 @@ function LocationChanger() {
             >
             {locationObject.nome}
           </div>
-          <label class="campo-loc-change">Gestisci la tua location, cliccando su il campo da modificare lo puoi
+          <label className="campo-loc-change">Gestisci la tua location, cliccando su il campo da modificare lo puoi
           fare comodamente:</label>
           <div
             className="campo-loc"
@@ -123,8 +123,8 @@ function LocationChanger() {
       </div>
       <div className="rightSide">
         <div className="formAggiungiFoto">
-          <label class="campo-loc-change">Aggiungi le fotografie della location</label>
-          <label class="btn-upload" for="upload-img">Seleziona File</label>
+          <label className="campo-loc-change">Aggiungi le fotografie della location</label>
+          <label className="btn-upload" for="upload-img">Seleziona File</label>
           <input
             type="file"
             id="upload-img"
@@ -133,14 +133,14 @@ function LocationChanger() {
           <br /><br /><button class="btn-modifica" onClick={uploadImmagine}>Aggiungi Immagine</button>
         </div>
         <div className="galleriaFoto">
-          <br /><br /><label class="campo-loc-change"><b>Foto della tua location:</b></label>
+          <br /><br /><label className="campo-loc-change"><b>Foto della tua location:</b></label>
           {galleria.map((immagine) => (
             <div key={immagine.id} className="singolaFoto">
               <img
                 src={`http://localhost:3001/images/${immagine.nome}`}
                 alt={immagine.nome}
               />
-              <br /><br /><button class="btn-modifica" onClick={() => cancellaImg(immagine.id)}>Elimina</button>
+              <br /><br /><button className="btn-modifica" onClick={() => cancellaImg(immagine.id)}>Elimina</button>
             </div>
           ))}
         </div>

@@ -163,7 +163,7 @@ function Location() {
       <div className="leftSide">
         <div className="infoLocation">
           <div className="titolo">{locationObject.nome}</div>
-          <div class="campo-loc">
+          <div className="campo-loc">
             <b>Indirizzo:</b>
             <br />
             {locationObject.indirizzo}
@@ -181,7 +181,7 @@ function Location() {
         <div className="cancellaLocation">
           {authState.id === locationObject.UtentiId && (
             <button
-              class="btn-modifica"
+              className="btn-modifica"
               onClick={() => {
                 cancellaLocation(locationObject.id);
               }}
@@ -201,13 +201,13 @@ function Location() {
                   <br></br>
                   <label>Data:    {evento.dataEvento}</label><br />
                   {authState.id === evento.UtentiId && ( //Mostra il bottone per eliminare l'evento se è loggato lo stesso che l'ha creato
-                    <button class="btn-modifica" onClick={() => cancellaEvento(evento.id)}>Elimina</button>
+                    <button className="btn-modifica" onClick={() => cancellaEvento(evento.id)}>Elimina</button>
                   )}
                 </div>
               );
             })}
           </div>
-          <div class="titolo-2">
+          <div className="titolo-2">
             Manda la richiesta per creare il tuo evento per questa location:
           </div>
           <div className="formCreazioneEvento">
@@ -218,7 +218,7 @@ function Location() {
             >
               {({ setFieldValue }) => (
                 <Form>
-                  <label class="campo-add">Nome evento:</label>
+                  <label className="campo-add">Nome evento:</label>
                   <ErrorMessage name="nome" component="span" />
                   <Field
                     class="field"
@@ -227,7 +227,7 @@ function Location() {
                     name="nome"
                     placeholder="Nome evento"
                   />
-                  <label class="campo-add">Descrizione:</label>
+                  <label className="campo-add">Descrizione:</label>
                   <ErrorMessage name="descrizione" component="span" />
                   <Field
                     class="field"
@@ -236,7 +236,7 @@ function Location() {
                     name="descrizione"
                     placeholder="Descrizione evento"
                   />
-                  <label class="campo-add">Data:</label>
+                  <label className="campo-add">Data:</label>
                   <ErrorMessage name="dataEvento" component="span" />
                   <ReactDatePicker
                     class="field"
@@ -250,7 +250,7 @@ function Location() {
                     }}
                   />
                   <br /><br /><br />
-                  <button class="btn-modifica" type="submit">Manda Richiesta</button>
+                  <button className="btn-modifica" type="submit">Manda Richiesta</button>
                 </Form>
               )}
             </Formik>

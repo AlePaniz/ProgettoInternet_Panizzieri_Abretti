@@ -72,7 +72,7 @@ function Login() {
                 <i class="bx bxs-lock-alt" />
               </div>
 
-              <button class="btn-log-reg-forgot" onClick={login}>
+              <button className="btn-log-reg-forgot" onClick={login}>
                 LOGIN
               </button>
 

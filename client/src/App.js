@@ -75,10 +75,10 @@ function App() {
           
           <Router>
               <header>
-                <div class="header">
-                  <div class="container">
-                    <div class="navbar">
-                      <div class="logo">
+                <div className="header">
+                  <div className="container">
+                    <div className="navbar">
+                      <div className="logo">
                         <a href="/"><img src={sfondo} /></a>
                       </div>
                       <nav>
@@ -103,7 +103,7 @@ function App() {
                                   </a>
                                 </li>
                               </label>
-                              <Link class="link_login" to="/">
+                              <Link className="link_login" to="/">
                                 <button className="btnLogin-popup" onClick={logout}>LOGOUT</button>
                               </Link>
                             </>

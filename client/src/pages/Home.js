@@ -50,38 +50,38 @@ function Home() {
         <link rel="stylesheet" href="Style.css"/>
       </Helmet>       
 
-      <div class="header">
-        <div class="row">
-          <div class="col-2">
+      <div className="header">
+        <div className="row">
+          <div className="col-2">
             <h1>Dove Ogni Dettaglio Conta</h1>
-            <p class="sottotitolo">Il nostro obiettivo è stupire i nostri clienti e i loro ospiti, lasciandoli senza parole,
+            <p className="sottotitolo">Il nostro obiettivo è stupire i nostri clienti e i loro ospiti, lasciandoli senza parole,
               e soprattutto organizzare<br></br>eventi indimenticabili in location
               straordinarie.</p>
           </div>
-          <div class="col-2">
+          <div className="col-2">
             <img src={copertina}/>
           </div>
         </div>
       </div>
 
-      <div class="categorie">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-3">
+      <div className="categorie">
+        <div className="small-container">
+          <div className="row">
+            <div className="col-3">
               <img src={categoria1} />
             </div>
-            <div class="col-3">
+            <div className="col-3">
               <img src={categoria2} />
             </div>
-            <div class="col-3">
+            <div className="col-3">
               <img src={categoria3} />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="small-container">
-        <h2 class="titolo">Eventi In Programma</h2>     
+      <div className="small-container">
+        <h2 className="titolo">Eventi In Programma</h2>     
         {locationList.map((value, key) => {
             //key=index dell'elemento dell'array mentre value= il valore dell'elemento
           return (
@@ -103,15 +103,15 @@ function Home() {
         })}
       </div> 
 
-      <div class="proposta">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-2">
-              <img src={bardi} class="proposta-img"/>
+      <div className="proposta">
+        <div className="small-container">
+          <div className="row">
+            <div className="col-2">
+              <img src={bardi} className="proposta-img"/>
             </div>
-            <div class="col-2">
+            <div className="col-2">
               <p>Organizza Il Tuo Evento Da Noi</p>
-              <h1 class="proposta-titolo">Castello di Bardi</h1>
+              <h1 className="proposta-titolo">Castello di Bardi</h1>
               <small>Possiamo organizzare il tuo evento in qualsiasi location, comprese quelle suggestive come il Castello di Bardi. Sebbene possa sembrare una scelta secondaria, questa location provinciale è ricca di storia e fascino medievale. 
                 Permetti ai tuoi ospiti di godersi l'evento in un luogo unico e indimenticabile come questo.</small>
             </div>
@@ -119,19 +119,19 @@ function Home() {
         </div>
       </div>   
 
-      <div class="partners">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-5">
+      <div className="partners">
+        <div className="small-container">
+          <div className="row">
+            <div className="col-5">
               <img src={immobiliare} />
             </div>
-            <div class="col-5">
+            <div className="col-5">
               <img src={facile} />
             </div>
-            <div class="col-5">
+            <div className="col-5">
               <img src={ticketone} />
             </div>
-            <div class="col-5">
+            <div className="col-5">
               <img src={vivaticket} />
             </div>
             <div class="col-5">
@@ -141,17 +141,17 @@ function Home() {
         </div>
       </div>
 
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col-1">
+      <div className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="footer-col-1">
               <h3>Scarica La Nostra App</h3>
               <p>Scarica la nostra app sia su Play Store che su Apple Store.</p>
-              <div class="app-logo">
+              <div className="app-logo">
                 <img src={play_app} />
               </div>
             </div>
-            <div class="footer-col-3">
+            <div className="footer-col-3">
               <h3>Seguici su</h3>
               <img src={facebook} /><img src={instagram} /><img src={linkedin} /><img src={twitter} /><img src={yt} />
             </div>

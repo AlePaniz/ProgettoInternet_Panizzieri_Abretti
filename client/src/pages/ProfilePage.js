@@ -74,85 +74,85 @@ function ProfilePage() {
         <link rel="stylesheet" href="Style.css"/>
       </Helmet>
       <div className="paginaProfilo">
-        <div class="row">
-          <div class="col-md-4 mt-1">
-            <div class="card text-center sidebar">
-            <br></br><h1 class="m-3 pt-3">ABOUT</h1><br></br>
-              <div class="card-body">
+        <div className="row">
+          <div className="col-md-4 mt-1">
+            <div className="card text-center sidebar">
+            <br></br><h1 className="m-3 pt-3">ABOUT</h1><br></br>
+              <div className="card-body">
                 <img src={profilo} width="150"/>
-                <div class="row">
-                    <div class="col-md-3">
+                <div className="row">
+                    <div className="col-md-3">
                       <h5>Nome</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {nome} 
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Cognome</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {cognome} 
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Username</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {username} 
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Email</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {email}
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Telefono</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {telefono}
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Codice Fiscale</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {codFiscale}
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Indirizzo</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {indirizzo} 
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <h5>Tipo Utente</h5>
                     </div>
-                    <div class="col-md-9 text-secondary">
+                    <div className="col-md-9 text-secondary">
                       {tipoUtente} 
                     </div>
                   </div>
                   <hr></hr>
-                  <div class="row">
+                  <div className="row">
                     <div className="informazioniUtente">
                       <h2 className="testo2"></h2>
                       {authState.username === username && (
@@ -163,9 +163,9 @@ function ProfilePage() {
               </div>
             </div>
           </div>
-            <div class="col-md-8 mt-1">
+            <div className="col-md-8 mt-1">
               <div className="listaLocation">
-                <br></br><h1 class="m-3">Lista Location</h1><br></br>
+                <br></br><h1 className="m-3">Lista Location</h1><br></br>
                 {locationList.map((value, key) => {
                   //key=index dell'elemento dell'array mentre value= il valore dell'elemento
                   return (
@@ -176,38 +176,38 @@ function ProfilePage() {
                       }}
                       key={key}>
                       
-                      <div class="row">
-                        <div class="col-md-3">
+                      <div className="row">
+                        <div className="col-md-3">
                           <h5>Nome</h5>
                         </div>
-                        <div class="col-md-9 text-secondary">
+                        <div className="col-md-9 text-secondary">
                           {value.nome}
                         </div>
                       </div>
                       <hr></hr>
-                      <div class="row">
-                        <div class="col-md-3">
+                      <div className="row">
+                        <div className="col-md-3">
                           <h5>Indirizzo</h5>
                         </div>
-                        <div class="col-md-9 text-secondary">
+                        <div className="col-md-9 text-secondary">
                           {value.indirizzo}
                         </div>
                       </div>
                       <hr></hr>
-                      <div class="row">
-                        <div class="col-md-3">
+                      <div className="row">
+                        <div className="col-md-3">
                           <h5>Descrizione</h5>
                         </div>
-                        <div class="col-md-9 text-secondary">
+                        <div className="col-md-9 text-secondary">
                           {value.descrizione}
                         </div>
                       </div>
                       <hr></hr>
-                      <div class="row">
-                        <div class="col-md-3">
+                      <div className="row">
+                        <div className="col-md-3">
                           <h5>Numero Posti</h5>
                         </div>
-                        <div class="col-md-9 text-secondary">
+                        <div className="col-md-9 text-secondary">
                           {value.nPosti}
                         </div>
                       </div>

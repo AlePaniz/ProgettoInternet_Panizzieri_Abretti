@@ -33,12 +33,12 @@ function ChangePsw() {
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
         <link rel="stylesheet" href="Style.css"/>
       </Helmet>
-      <div class="log-forgot-header">
+      <div className="log-forgot-header">
         <div className="wrapper">
           <div className="changePswPage">
             <h2>Cambia la tua Password:</h2>
             <div className="formChange">
-              <div class="input-box">
+              <div className="input-box">
                 <input
                   type="password"
                   placeholder="Vecchia Password"
@@ -47,7 +47,7 @@ function ChangePsw() {
                   }}
                 />
               </div>
-              <div class="input-box">
+              <div className="input-box">
                 <input
                   type="password"
                   placeholder="Nuova Password"
@@ -56,7 +56,7 @@ function ChangePsw() {
                   }}
                 />
               </div>
-              <button class="btn-log-reg-forgot" onClick={changePsw}>Cambia Password</button>
+              <button className="btn-log-reg-forgot" onClick={changePsw}>Cambia Password</button>
             </div>
           </div>
         </div>

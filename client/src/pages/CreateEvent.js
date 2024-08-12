@@ -64,7 +64,7 @@ function CreateEvent() {
                 setSelectedDate(date);
               }}
             />
-            <button class="btn-modifica" type="submit">Crea Evento</button>
+            <button className="btn-modifica" type="submit">Crea Evento</button>
           </Form>
         )}
       </Formik>

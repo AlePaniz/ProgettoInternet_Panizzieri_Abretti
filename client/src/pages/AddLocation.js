@@ -47,8 +47,8 @@ function AddLocation() {
           validationSchema={validationSchema}
         >
           <Form className="add-location-container">
-            <div class="row-add">
-              <label class="campo-add">Nome:</label>
+            <div className="row-add">
+              <label className="campo-add">Nome:</label>
               <ErrorMessage name="nome" component="span"/>
               <Field
                 class="field"
@@ -57,7 +57,7 @@ function AddLocation() {
                 name="nome"
                 placeholder="Nome location"
               />
-              <label class="campo-add">Descrizione:</label>
+              <label className="campo-add">Descrizione:</label>
               <ErrorMessage name="descrizione" component="span" />
               <Field
                 class="field"
@@ -67,8 +67,8 @@ function AddLocation() {
                 placeholder="Descrizione location"
               />
             </div>
-            <div class="row-add">
-              <label class="campo-add">Indirizzo:</label>
+            <div className="row-add">
+              <label className="campo-add">Indirizzo:</label>
               <ErrorMessage name="indirizzo" component="span" />
               <Field
                 class="field"
@@ -77,7 +77,7 @@ function AddLocation() {
                 name="indirizzo"
                 placeholder="Indirizzo location"
               />
-              <label class="campo-add">Numero di posti disponibili:</label>
+              <label className="campo-add">Numero di posti disponibili:</label>
               <ErrorMessage name="nPosti" component="span" />
               <Field
                 class="field"
@@ -88,7 +88,7 @@ function AddLocation() {
               />
             </div>
             
-            <button class="btn-modifica" type="submit">Aggiungi Location</button>
+            <button className="btn-modifica" type="submit">Aggiungi Location</button>
           </Form>
         </Formik>
       </div>
